@@ -99,7 +99,7 @@
             background:
                 linear-gradient(180deg, rgba(9, 10, 9, .34) 0%, rgba(9, 10, 9, .1) 35%, #11110f 100%),
                 linear-gradient(90deg, rgba(9, 10, 9, .72), rgba(9, 10, 9, .08)),
-                url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1800&q=85") center 48% / cover;
+                url("hero-img.jpeg") center 48% / cover;
         }
 
         .hero::after {
@@ -243,7 +243,8 @@
         .activity-card {
             position: relative;
             display: flex;
-            min-height: 210px;
+            min-height: 300px;
+            height: 300px;
             flex-direction: column;
             justify-content: flex-end;
             overflow: hidden;
@@ -252,10 +253,12 @@
         }
 
         .activity-card::before {
-            position: absolute;
+            position: absolute !important;
             inset: 0;
-            background: linear-gradient(180deg, rgba(0, 0, 0, .02) 5%, rgba(0, 0, 0, .78) 100%);
-            content: "";
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
+            content: "" !important;
+            z-index: 2 !important;
+            pointer-events: none;
         }
 
         .activity-card img {
@@ -265,6 +268,7 @@
             height: 100%;
             object-fit: cover;
             transition: transform .5s ease;
+            z-index: 1 !important;
         }
 
         .activity-card:hover img {
@@ -272,8 +276,9 @@
         }
 
         .activity-card-content {
-            position: relative;
-            z-index: 1;
+            position: relative !important;
+            z-index: 3 !important;
+            color: #fff;
         }
 
         .activity-number {
@@ -571,7 +576,6 @@
                     <article class="activity-card">
                         <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Inspirasi gaya dan outfit komunitas" loading="lazy">
                         <div class="activity-card-content">
-                            <span class="activity-number">03 / FXR STYLE</span>
                             <h3>Explore the gear</h3>
                             <p>Lihat lebih dekat pilihan gear dan merchandise FXR yang dibawa ke acara.</p>
                         </div>
