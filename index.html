@@ -16,7 +16,7 @@
             --paper: #11110f;
             --panel: #1b1b18;
             --line: rgba(242, 240, 233, .14);
-            --lime: #B72C18;
+            --lime: #f79921;
             --orange: #ff6845;
             --page-width: 1120px;
         }
@@ -350,6 +350,10 @@
             transition: transform .4s ease;
         }
 
+        .merch-image--shirt img {
+            object-fit: contain;
+        }
+
         .merch-card:hover .merch-image img {
             transform: scale(1.04);
         }
@@ -650,6 +654,11 @@
             font-size: 10px;
         }
 
+        .hero-logo-wrapper span{
+            text-align: center;
+            font-size: 20px;
+        }
+
         @media (min-width: 500px) {
             .hero-social-buttons {
                 flex-direction: row;
@@ -750,7 +759,7 @@
     <div class="page-shell">
         <header class="topbar">
             <span class="brand">
-                <span class="brand-mark" aria-hidden="true">FXR</span>
+                <img class="brand-mark" src="asset/fxr-indonesia-logo.jpg" alt="" aria-hidden="true">
                 <span>FXR INDONESIA</span>
             </span>
             <a class="top-link" href="#socialmedia">Jelajahi <span aria-hidden="true">↘</span></a>
@@ -759,12 +768,13 @@
         <main>
             <!-- Hero Section -->
             <section class="hero" aria-labelledby="hero-title">
-                <!--<h1 id="hero-title">HIGH OCTANE<span>KUSTOMFEST 2026</span></h1>
-                <p class="hero-copy">Tempat untuk membangkitkan semangat kebangkitan, energi membara, dan tenaga baru untuk mendongkrak ekonomi di dunia kustom culture.</p>-->
+                <h1 id="hero-title"style="text-align: center; font-size: 25px; margin-bottom: 220px; line-height: 1.2; ">Kunjungi Kami Di Booth<span style="color: #f79921">A10</span></h1>
+                <!-- <p class="hero-copy">Tempat untuk membangkitkan semangat kebangkitan, energi membara, dan tenaga baru untuk mendongkrak ekonomi di dunia kustom culture.</p> -->
 
                 <div class="hero-logo-wrapper">
                     <img class="hero-logo" src="event-logo.png" alt="Logo FXR Indonesia">
                 </div>
+                
                 <span class="hero-note">Community · Culture · Good times</span>
             </section>
 
@@ -871,7 +881,7 @@
             <section class="section merch-section" id="merch" aria-labelledby="merch-title">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">Bawa pulang ceritanya</p>
+                        <p class="eyebrow" style="color: #f79921;">Bawa pulang ceritanya</p>
                         <h2 id="merch-title">FXR <span>goods.</span></h2>
                         <p class="section-intro">Pilihan merchandise untuk jadi pengingat hari yang menyenangkan. Temukan langsung di area acara.</p>
                     </div>
@@ -879,36 +889,32 @@
 
                 <div class="merch-grid">
                     <article class="merch-card">
-                        <div class="merch-image">
-                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80" alt="Kaos berwarna putih" loading="lazy">
-                            <span class="merch-tag">Event pick</span>
+                        <div class="merch-image merch-image--shirt">
+                            <img src="asset/WhatsApp Image 2026-10-09 at 08.10.36.jpeg" alt="Kaos hitam FXR Indonesia tampak depan dan belakang" loading="lazy">
                         </div>
                         <div class="merch-info">
-                            <div><h3>Graphic tee</h3><p>Daily uniform</p></div>
+                            <div><h3>FXR Indonesia Tee</h3><p>Front &amp; back graphic</p></div>
                         </div>
                     </article>
                     <article class="merch-card">
                         <div class="merch-image">
-                            <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=700&q=80" alt="Topi kasual untuk sehari-hari" loading="lazy">
-                            <span class="merch-tag">Limited</span>
+                            <img src="asset/WhatsApp Image 2026-10-09 at 08.12.56.jpeg" alt="Topi kasual untuk sehari-hari" loading="lazy">
                         </div>
                         <div class="merch-info">
                             <div><h3>Everyday cap</h3><p>Top it off</p></div>
                         </div>
                     </article>
                     <article class="merch-card">
-                        <div class="merch-image">
-                            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=80" alt="Botol minum praktis" loading="lazy">
-                            <span class="merch-tag">Fan fave</span>
+                        <div class="merch-image merch-image--shirt">
+                            <img src="asset/Desain Tanpa Judul (5).png" alt="Kaos hitam FXR Day tampak depan dan belakang" loading="lazy">
                         </div>
                         <div class="merch-info">
-                            <div><h3>Ride bottle</h3><p>Take it along</p></div>
+                            <div><h3>FXR Day Tee</h3><p>FXR Day graphic</p></div>
                         </div>
                     </article>
                     <article class="merch-card">
                         <div class="merch-image">
-                            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=700&q=80" alt="Notebook untuk menyimpan ide dan cerita" loading="lazy">
-                            <span class="merch-tag">New drop</span>
+                            <img src="asset/WhatsApp Image 2026-10-09 at 08.12.57.jpeg" alt="Notebook untuk menyimpan ide dan cerita" loading="lazy">
                         </div>
                         <div class="merch-info">
                             <div><h3>Field notes</h3><p>Keep the story</p></div>
@@ -929,7 +935,7 @@
 
         <footer class="footer">
             <a class="brand" href="#" aria-label="FXR Indonesia, kembali ke atas">
-                <span class="brand-mark" aria-hidden="true">FXR</span>
+                <img class="brand-mark" src="asset/fxr-indonesia-logo.jpg" alt="" aria-hidden="true">
                 <span>FXR INDONESIA</span>
             </a>
             <p class="footer-note">Meet us out there.<br>Community, culture, and good times.</p>
